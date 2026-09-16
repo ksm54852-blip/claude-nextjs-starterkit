@@ -8,7 +8,7 @@ export const siteConfig = {
     "Next.js App Router · TypeScript · Tailwind CSS v4 · shadcn/ui 기반 스타터 킷",
   url: "http://localhost:3000",
   links: {
-    github: "https://github.com",
+    github: "https://github.com/ksm54852-blip/claude-nextjs-starterkit",
   },
 } as const
 

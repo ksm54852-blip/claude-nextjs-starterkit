@@ -53,6 +53,8 @@ export function SiteHeader() {
             variant="ghost"
             size="icon"
             aria-label="소스 코드 저장소"
+            // 링크로 렌더링하므로 native <button> 검사를 끈다
+            nativeButton={false}
             render={
               <a
                 href={siteConfig.links.github}

@@ -75,13 +75,19 @@ export default function HomePage() {
           </p>
         </div>
         <div className="flex flex-wrap gap-2">
-          <Button size="lg" render={<Link href="/showcase" />}>
+          {/* 링크로 렌더링하므로 native <button> 검사를 끈다 */}
+          <Button
+            size="lg"
+            nativeButton={false}
+            render={<Link href="/showcase" />}
+          >
             컴포넌트 둘러보기
             <ArrowRightIcon className="size-4" />
           </Button>
           <Button
             size="lg"
             variant="outline"
+            nativeButton={false}
             render={<Link href="/form-demo" />}
           >
             폼 예제 보기
